@@ -61,3 +61,7 @@ console.log(
         { even: 0, odd: 0 },
     ),
 );
+
+// Ex 25
+const nums4 = [4, 12, 3, 96, 45];
+console.log(nums4.sort((a, b) => b - a));
