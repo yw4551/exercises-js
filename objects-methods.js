@@ -1,16 +1,41 @@
 import input from "analiza-sync";
 
 // Ex 1
-const name = input("Enter your name: ");
-console.log(name.toUpperCase());
+function lowerCaseName() {
+    const name = input("Enter your name: ");
+    return name.toLowerCase();
+}
+
+// console.log(lowerCaseName());
 
 // Ex 2
-const text = input("Enter some text: ");
-console.log(text.trim());
+function trimWhiteSpaces() {
+    const text = input("Enter some text: ");
+    return text.trim();
+}
+
+// console.log(trimWhiteSpaces());
 
 // Ex 3
-const email = input("Enter your email address: ");
-console.log(email.includes("@"));
+function validateEmail() {
+    const email = input("Enter your email address: ");
+    return email.includes("@");
+}
+
+// console.log(validateEmail());
 
 // Ex 4
-console.log(email.endsWith(".com"));
+function domainEnd() {
+    const domain = input("Enter your domain address: ");
+    return domain.endsWith(".com");
+}
+
+// console.log(domainEnd());
+
+// Ex 5
+function trimFirstName(fullName) {
+    const index = fullName.lastIndexOf(" ");
+    return fullName.slice(index).trim();
+}
+
+console.log(trimFirstName("Yitzi Weiner"));
