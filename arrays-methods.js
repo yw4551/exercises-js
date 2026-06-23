@@ -68,3 +68,11 @@ console.log(nums4.sort((a, b) => b - a));
 
 // Ex 29
 console.log(nums.splice(1, 2));
+
+// Ex 32
+const matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [6, 7, 8],
+];
+console.log(matrix.flat());
