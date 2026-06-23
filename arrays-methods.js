@@ -104,3 +104,17 @@ console.log(
 // Ex 39
 const values = ["a", "r", "v", "c", "l", "a"];
 console.log(values.some((item, index) => values.indexOf(item) !== index));
+
+// Ex 41
+const products = [
+    { name: "Laptop", price: 800, inStock: true, category: "tech" },
+    { name: "Phone", price: 400, inStock: false, category: "tech" },
+    { name: "Shirt", price: 50, inStock: true, category: "fashion" },
+];
+console.log(
+    products
+        .filter((product) => product.inStock === true)
+        .filter((product) => product.price > 100)
+        .sort((product) => product.price)
+        .map((product) => product.name),
+);
