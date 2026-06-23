@@ -76,3 +76,11 @@ const matrix = [
     [6, 7, 8],
 ];
 console.log(matrix.flat());
+
+// Ex 36
+console.log(
+    nums1
+        .filter((num) => num % 2 === 0)
+        .map((num) => num * 2)
+        .reduce((acc, current) => acc + current, 0),
+);
