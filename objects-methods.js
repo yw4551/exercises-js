@@ -38,4 +38,11 @@ function trimFirstName(fullName) {
     return fullName.slice(index).trim();
 }
 
-console.log(trimFirstName("Yitzi Weiner"));
+// console.log(trimFirstName("Yitzi Weiner"));
+
+// Ex 6
+function splitFullName(fullName) {
+    return fullName.split(" ");
+}
+
+console.log(splitFullName("Yitzi Weiner"));
