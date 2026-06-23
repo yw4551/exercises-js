@@ -84,3 +84,19 @@ console.log(
         .map((num) => num * 2)
         .reduce((acc, current) => acc + current, 0),
 );
+
+// Ex 38
+const objList = [{ type: "fruit" }, { type: "veg" }, { type: "fruit" }];
+console.log(
+    objList.reduce((acc, current) => {
+        const key = current.type;
+
+        if (!acc[key]) {
+            acc[key] = [];
+        }
+
+        acc[key].push(current);
+
+        return acc;
+    }, {}),
+);
