@@ -100,3 +100,7 @@ console.log(
         return acc;
     }, {}),
 );
+
+// Ex 39
+const values = ["a", "r", "v", "c", "l", "a"];
+console.log(values.some((item, index) => values.indexOf(item) !== index));
