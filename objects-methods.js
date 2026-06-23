@@ -45,4 +45,11 @@ function splitFullName(fullName) {
     return fullName.split(" ");
 }
 
-console.log(splitFullName("Yitzi Weiner"));
+// console.log(splitFullName("Yitzi Weiner"));
+
+// Ex 7
+function bePositive(str) {
+    return str.replace("bad", "good");
+}
+
+console.log(bePositive("You are so bad!"));
